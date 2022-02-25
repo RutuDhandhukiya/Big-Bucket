@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="20sp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    <ImageView
+        android:tint="@color/black"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/ic_person_24" />
+
+    <TextView
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Account" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="30sp"
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/browser_actions_bg_grey" />
+
+</RelativeLayout>

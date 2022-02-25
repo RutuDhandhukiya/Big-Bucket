@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Address">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lgreen">
+
+        <ImageView
+            android:id="@+id/imgback"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_backb_24">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Address"
+            android:gravity="center"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <EditText
+            android:id="@+id/ethouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House no."
+            android:layout_margin="10dp"
+            android:textSize="15dp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/etstreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street details"
+            android:layout_margin="10dp"
+            android:textSize="15dp">
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvkamrej"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kamrej"
+            android:textSize="15dp"
+            android:layout_margin="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvsurat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surat"
+            android:textSize="15dp"
+            android:layout_margin="10dp">
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/dgreen">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncountinue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:text="Continue"
+            android:textColor="@color/white">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</LinearLayout>

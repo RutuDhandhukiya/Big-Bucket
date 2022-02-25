@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640554732420",
+    "project_id": "bigbucket-c08c5",
+    "storage_bucket": "bigbucket-c08c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640554732420:android:c977b1168adeff15182bd1",
+        "android_client_info": {
+          "package_name": "com.example.bigbucket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640554732420-8etoftn3qc439bbp4ns2199euov0bp9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkp5WAR7sp6NISt8nzUmwgbjm_ucnxKU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640554732420-8etoftn3qc439bbp4ns2199euov0bp9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/main_item"
+        android:title="">
+        <menu>
+            <item
+                android:checkable="true"
+                android:title="My orders" />
+            <item
+                android:checkable="true"
+                android:title="Combo" />
+            <item
+                android:checkable="true"
+                android:title="Notifications" />
+            <item
+                android:checkable="true"
+                android:title="Coupons" />
+            <item
+                android:checkable="true"
+                android:title="Order details" />
+            <item
+                android:checkable="true"
+                android:title="Track order" />
+        </menu>
+    </item>
+</menu>
