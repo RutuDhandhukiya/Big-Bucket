@@ -17,6 +17,7 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
@@ -28,7 +29,8 @@ import java.util.Map;
 public class SignUppage extends AppCompatActivity
 {
 
-    private EditText etname, etemil, etpass, etrepass;
+    private EditText etname, etemil;
+    private TextInputLayout etpass, etrepass;
     private TextView tvacc,tvlogin;
     private Button btnsignup1;
     private ImageView imgbb3;
@@ -74,7 +76,7 @@ public class SignUppage extends AppCompatActivity
                 String name, email, password;
                 name = etname.getText().toString();
                 email = etemil.getText().toString();
-                password = etpass.getText().toString();
+                password = etpass.getEditText().getText().toString();
 
                 if (TextUtils.isEmpty(name)) {
                     Toast.makeText(getApplicationContext(),

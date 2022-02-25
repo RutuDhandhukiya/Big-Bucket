@@ -108,7 +108,7 @@ public class LoginPage extends AppCompatActivity
                                     // if sign-in is successful
                                     // intent to home activity
                                     Intent intent
-                                            = new Intent(LoginPage.this, GridActivity.class);
+                                            = new Intent(LoginPage.this, navigation_drawer.class);
                                     startActivity(intent);
                                 }
                                 else {
