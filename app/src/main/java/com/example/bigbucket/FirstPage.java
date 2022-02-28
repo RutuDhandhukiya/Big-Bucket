@@ -41,13 +41,4 @@ public class FirstPage extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser user = mAuth.getCurrentUser();
-        if(user != null) {
-            startActivity(new Intent(FirstPage.this, navigation_drawer.class));
-        }
-    }
-
 }

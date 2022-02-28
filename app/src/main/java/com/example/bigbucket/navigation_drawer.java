@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,6 +23,7 @@ public class navigation_drawer extends AppCompatActivity implements NavigationVi
 
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+    BottomNavigationView bottomNavigationView;
     private Toolbar toolbar;
     Button logout;
     FirebaseAuth mAuth;
@@ -41,6 +43,8 @@ public class navigation_drawer extends AppCompatActivity implements NavigationVi
 
         drawerLayout = findViewById(R.id.drawer_layout);
         navigationView = findViewById(R.id.nav_view);
+
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         toolbar = findViewById(R.id.appbar);
         setSupportActionBar(toolbar);
