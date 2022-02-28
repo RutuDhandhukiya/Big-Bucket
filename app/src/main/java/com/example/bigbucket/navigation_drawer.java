@@ -78,6 +78,8 @@ public class navigation_drawer extends AppCompatActivity implements NavigationVi
                     fragmentTransaction.replace(R.id.frameLayout, new CartFragment());
                     fragmentTransaction.commit();
                 }
+
+
                 return true;
             }
         });
@@ -115,7 +117,47 @@ public class navigation_drawer extends AppCompatActivity implements NavigationVi
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull @org.jetbrains.annotations.NotNull MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull @org.jetbrains.annotations.NotNull MenuItem item)
+    {
+        drawerLayout.closeDrawer(GravityCompat.START);
+
+        if(item.getItemId() == R.id.navorder) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, new OrderFragment());
+            fragmentTransaction.commit();
+        }
+        if(item.getItemId() == R.id.navcombo) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, new ComboFragment());
+            fragmentTransaction.commit();
+        }
+        if(item.getItemId() == R.id.navnoti) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, new NotificationFragment());
+            fragmentTransaction.commit();
+        }
+        if(item.getItemId() == R.id.navcoupon) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, new CouponFragment());
+            fragmentTransaction.commit();
+        }
+        if(item.getItemId() == R.id.navorderdetails) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, new OrderdetailFragment());
+            fragmentTransaction.commit();
+        }
+        if(item.getItemId() == R.id.navordertrack) {
+            fragmentManager = getSupportFragmentManager();
+            fragmentTransaction = fragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.frameLayout, new TrackOrderFragment());
+            fragmentTransaction.commit();
+        }
+
         return true;
     }
 

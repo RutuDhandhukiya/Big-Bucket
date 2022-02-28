@@ -7,21 +7,27 @@
         android:title="">
         <menu>
             <item
+                android:id="@+id/navorder"
                 android:checkable="true"
                 android:title="My orders" />
             <item
+                android:id="@+id/navcombo"
                 android:checkable="true"
                 android:title="Combo" />
             <item
+                android:id="@+id/navnoti"
                 android:checkable="true"
                 android:title="Notifications" />
             <item
+                android:id="@+id/navcoupon"
                 android:checkable="true"
                 android:title="Coupons" />
             <item
+                android:id="@+id/navorderdetails"
                 android:checkable="true"
                 android:title="Order details" />
             <item
+                android:id="@+id/navordertrack"
                 android:checkable="true"
                 android:title="Track order" />
         </menu>
