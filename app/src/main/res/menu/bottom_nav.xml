@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
             <item
+                android:id="@+id/navhome"
                 android:icon="@drawable/bigbucket"
                 android:enabled="true"
                 android:title="Home" />
             <item
+                android:id="@+id/navcat"
                 android:icon="@drawable/ic_category"
                 android:enabled="true"
                 android:title="Categories" />
             <item
+                android:id="@+id/navwish"
                 android:icon="@drawable/ic_wish_list"
                 android:enabled="true"
                 android:title="Wishlist" />
             <item
+                android:id="@+id/navcart"
                 android:icon="@drawable/ic_cart"
                 android:enabled="true"
                 android:title="Cart" />

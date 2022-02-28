@@ -74,31 +74,6 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-
-                <!--<EditText
-                    android:id="@+id/etpass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter the your Password"
-                    android:gravity="center"
-                    app:passwordToggleEnabled="true"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/textshape"
-                    android:textSize="20dp">
-                </EditText>-->
-
-               <!-- <EditText
-                    android:id="@+id/etrepass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Re-Enter Password"
-                    android:gravity="center"
-                    android:layout_marginTop="20dp"
-                    app:passwordToggleEnabled="true"
-                    android:background="@drawable/textshape"
-                    android:textSize="20dp">
-                </EditText>-->
-
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
