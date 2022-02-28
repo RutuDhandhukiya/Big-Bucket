@@ -3,18 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.12158054711246201" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_sign_uppage.xml" value="0.12158054711246201" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_category.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_combo.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_home_grid.xml" value="0.12158054711246201" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_orderdetail.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_track_order.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_wish_list.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/menu/bottom_nav.xml" value="0.15" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/menu/nav_menu.xml" value="0.15" />
+        <entry key="..\:/Bigbucketfinal/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.16" />
+        <entry key="..\:/Bigbucketfinal/app/src/main/res/layout/fragment_coupon.xml" value="0.20416666666666666" />
+        <entry key="..\:/Project/Big-Bucket/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1" />
+        <entry key="..\:/Project/Big-Bucket/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.136" />
+        <entry key="..\:/Project/Big-Bucket/app/src/main/res/layout/header_layout.xml" value="0.22826086956521738" />
+        <entry key="..\:/Project/Big-Bucket/app/src/main/res/menu/bottom_nav.xml" value="0.25" />
+        <entry key="..\:/Project/Big-Bucket/app/src/main/res/menu/nav_menu.xml" value="0.25" />
+        <entry key="..\:/Project/Big-Bucket/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>
