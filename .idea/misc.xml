@@ -3,13 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_grid.xml" value="0.12158054711246201" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.12158054711246201" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_sign_uppage.xml" value="0.12158054711246201" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_cart.xml" value="0.25" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_category.xml" value="0.25" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_combo.xml" value="0.25" />
-        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_home_grid.xml" value="0.12158054711246201" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_coupon.xml" value="0.25" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_home_grid.xml" value="0.144" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_notification.xml" value="0.25" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_order.xml" value="0.25" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_orderdetail.xml" value="0.25" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_track_order.xml" value="0.25" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/fragment_wish_list.xml" value="0.25" />
