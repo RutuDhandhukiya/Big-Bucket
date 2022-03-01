@@ -5,4 +5,16 @@
     <string name="closeNavDrawer">Navigation Drawer Close</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Category">
+        <item>Fruits</item>
+        <item>Vegetables</item>
+        <item>Foodgrains</item>
+        <item>Oil-Masala</item>
+        <item>Beverages</item>
+        <item>Snacks</item>
+        <item>Dairy</item>
+    </string-array>
+
+
 </resources>

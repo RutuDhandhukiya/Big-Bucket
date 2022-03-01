@@ -11,14 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BigBucket">
+        <activity
+            android:name=".CategoryListActivity"
+            android:exported="false" />
         <activity android:name=".Activity_Wishlist" />
         <activity
             android:name=".navigation_drawer"
-            android:exported="false">
-
-
-        </activity>
-
+            android:exported="false"></activity>
         <activity
             android:name=".GridActivity"
             android:exported="false" />
@@ -27,48 +26,34 @@
             android:exported="false" />
         <activity
             android:name=".Fruit_List"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".ContinueShopping"
-            android:exported="false">
-        </activity>
-
+            android:exported="false"></activity>
         <activity
             android:name=".Address"
             android:exported="false" />
-
         <activity
             android:name=".ResetPassword"
             android:exported="false" />
-
         <activity
             android:name=".ForgotPassword"
             android:exported="false" />
-
         <activity
             android:name=".SignUppage"
-            android:exported="false">
-        </activity>
-
+            android:exported="false"></activity>
         <activity
             android:name=".LoginPage"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".FirstPage"
-            android:exported="false">
-
-        </activity>
-
+            android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
