@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -21,7 +24,18 @@ public class CategoryFragment extends Fragment
     }
 
     @Override
-    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(), R.array.Category, android.R.layout.activity_list_item);
+        
+        setListAdapter(adapter);
+        getListView().setOnItemClickListener(this);
+    }
+
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        String[] mess = getResources().getStringArray(R.array.Category);
+
+        Toast.makeText(getActivity(), "Item: " + mess[position], Toast.LENGTH_SHORT).show();
     }
 }

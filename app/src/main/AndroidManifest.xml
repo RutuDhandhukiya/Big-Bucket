@@ -12,24 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BigBucket">
         <activity
+            android:name=".GridItemActivity"
+            android:exported="false" />
+        <activity
             android:name=".CategoryListActivity"
             android:exported="false" />
         <activity android:name=".Activity_Wishlist" />
         <activity
             android:name=".navigation_drawer"
-            android:exported="false"></activity>
-        <activity
-            android:name=".GridActivity"
             android:exported="false" />
         <activity
             android:name=".HomePage"
             android:exported="false" />
         <activity
             android:name=".Fruit_List"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ContinueShopping"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".Address"
             android:exported="false" />
@@ -41,7 +41,7 @@
             android:exported="false" />
         <activity
             android:name=".SignUppage"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".LoginPage"
             android:exported="true">
@@ -53,7 +53,7 @@
         </activity>
         <activity
             android:name=".FirstPage"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

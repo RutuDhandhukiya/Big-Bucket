@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_category_list.xml" value="0.1" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_fruit_add.xml" value="0.1" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_fruit_list.xml" value="0.1" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_grid.xml" value="0.12158054711246201" />
+        <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_grid_item.xml" value="0.12158054711246201" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_home_page.xml" value="0.176" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.12158054711246201" />
         <entry key="..\:/Android/BigBucket/app/src/main/res/layout/activity_sign_uppage.xml" value="0.12158054711246201" />

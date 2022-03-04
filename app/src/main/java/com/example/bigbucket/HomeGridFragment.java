@@ -18,54 +18,36 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
-public class HomeGridFragment extends Fragment {
+public class HomeGridFragment extends Fragment
+{
 
-    GridView gridView;
-    ArrayList<String> mItems;
-    ThumbnailDownloader<ImageView> mThumbnailThread;
+    GridView gridview;
+    int logos[] = {R.drawable.ic_person_24,R.drawable.ic_person_24};
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View RootView = inflater.inflate(R.layout.fragment_home_grid, container, false);
+
+        gridview = (GridView)RootView.findViewById(R.id.gridview);
+        return RootView;
+
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRetainInstance(true);
-        new FetchItemsTask().execute();
+        setContentView(R.layout.fragment_home_grid);
+
     }
 
+    private void setContentView(int fragment_home_grid) {
+    }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home_grid, container, false);
-        gridView = (GridView) view.findViewById(R.id.navhome);
-        setupAdapter();
-        return view;
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
-    private void setupAdapter() {
-        if (getActivity() == null || gridView == null) return;
-        if (mItems != null) {
-            gridView.setAdapter(new ArrayAdapter<String>(getActivity(),
-                    android.R.layout.simple_gallery_item, mItems));
-        } else {
-            gridView.setAdapter(null);
-        }
-    }
 
-    private class FetchItemsTask extends AsyncTask<Void, Void, ArrayList<String>> {
-        @Override
-        protected ArrayList<String> doInBackground(Void... params) {
-            ArrayList<String> quotes = DatabaseManager.get(getActivity()).getAllActiveQuotes();
-            return quotes;
-        }
-
-        @Override
-        protected void onPostExecute(ArrayList<String> items) {
-            mItems = items;
-            setupAdapter();
-        }
-
-        @Override
-        public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-            super.onViewCreated(view, savedInstanceState);
-        }
-    }
 }
