@@ -8,14 +8,14 @@ import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.Objects;
 
-public class Address extends AppCompatActivity {
+public class combo extends AppCompatActivity {
 
     MaterialToolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_address);
+        setContentView(R.layout.activity_combo);
 
         toolbar = findViewById(R.id.appbar);
         setSupportActionBar(toolbar);

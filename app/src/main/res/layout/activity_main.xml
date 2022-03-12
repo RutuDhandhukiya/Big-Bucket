@@ -17,7 +17,6 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardview"
             android:layout_width="match_parent"
@@ -26,8 +25,7 @@
             app:cardElevation="5dp"
             app:cardUseCompatPadding="true"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            ></com.google.android.material.card.MaterialCardView>
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

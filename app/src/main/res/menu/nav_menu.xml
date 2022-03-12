@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <item
-        android:id="@+id/main_item"
-        android:title="">
-        <menu>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
             <item
                 android:id="@+id/navorder"
-                android:checkable="true"
                 android:title="My orders" />
             <item
                 android:id="@+id/navcombo"
-                android:checkable="true"
                 android:title="Combo" />
             <item
                 android:id="@+id/navnoti"
-                android:checkable="true"
                 android:title="Notifications" />
             <item
                 android:id="@+id/navcoupon"
-                android:checkable="true"
                 android:title="Coupons" />
             <item
                 android:id="@+id/navorderdetails"
-                android:checkable="true"
                 android:title="Order details" />
             <item
                 android:id="@+id/navordertrack"
-                android:checkable="true"
                 android:title="Track order" />
-        </menu>
-    </item>
 </menu>

@@ -10,6 +10,7 @@
     <color name="lgreen">#A2D344</color>
     <color name="dgreen">#547A0C</color>
     <color name="bbred">#ED091A</color>
+    <color name="grey">#696969</color>
 
     <color name="md_theme_light_primary">#466800</color>
     <color name="md_theme_light_onPrimary">#FFFFFF</color>

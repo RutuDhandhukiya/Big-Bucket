@@ -7,6 +7,7 @@ import android.nfc.Tag;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,12 +27,11 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SignUppage extends AppCompatActivity
-{
+public class SignUppage extends AppCompatActivity {
 
     private EditText etname, etemil;
     private TextInputLayout etpass, etrepass;
-    private TextView tvacc,tvlogin;
+    private TextView tvacc, tvlogin;
     private Button btnsignup1;
     private ImageView imgbb3;
     private FirebaseAuth mAuth;
@@ -40,8 +40,7 @@ public class SignUppage extends AppCompatActivity
     public static final String TAG = "TAG";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_uppage);
 
@@ -56,17 +55,7 @@ public class SignUppage extends AppCompatActivity
         etpass = findViewById(R.id.etpass1);
         btnsignup1 = findViewById(R.id.btnsignup1);
 
-        tvlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent
-                        = new Intent(SignUppage.this, LoginPage.class);
-                startActivity(intent);
-            }
-        });
-
-        btnsignup1.setOnClickListener(new View.OnClickListener()
-        {
+        btnsignup1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 registerNewUser();
@@ -79,69 +68,53 @@ public class SignUppage extends AppCompatActivity
                 password = etpass.getEditText().getText().toString();
 
                 if (TextUtils.isEmpty(name)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Please enter your Name!!",
-                            Toast.LENGTH_LONG)
-                            .show();
+                    Toast.makeText(getApplicationContext(), "Please enter your Name!!", Toast.LENGTH_LONG).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Please enter email!!",
-                            Toast.LENGTH_LONG)
-                            .show();
+                    Toast.makeText(getApplicationContext(), "Please enter email!!", Toast.LENGTH_LONG).show();
+                    return;
+                } if (TextUtils.isEmpty(password)) {
+                    Toast.makeText(getApplicationContext(), "Please enter password!!", Toast.LENGTH_LONG).show();
+                    return;
+                } if (password.length() < 6) {
+                    Toast.makeText(getApplicationContext(), "Password should be longer", Toast.LENGTH_LONG).show();
                     return;
                 }
-                if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(),
-                            "Please enter password!!",
-                            Toast.LENGTH_LONG)
-                            .show();
-                    return;
-                }
-                mAuth
-                        .createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
-                            @Override
-                            public void onComplete(Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    Toast.makeText(getApplicationContext(),
-                                            "Registration successful!",
-                                            Toast.LENGTH_LONG)
-                                            .show();
-                                    userID = mAuth.getCurrentUser().getUid();
-                                    DocumentReference documentReference = fStore.collection("Users").document(userID);
-                                    Map<String, Object> user = new HashMap<>();
-                                    user.put("name", name);
-                                    user.put("email", email);
-                                    user.put("password", password);
+                    @Override
+                    public void onComplete(Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
+                            userID = mAuth.getCurrentUser().getUid();
+                            DocumentReference documentReference = fStore.collection("Users").document(userID);
+                            Map<String, Object> user = new HashMap<>();
+                            user.put("name", name);
+                            user.put("email", email);
+                            user.put("password", password);
 
-                                    documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                        @Override
-                                        public void onSuccess(Void unused) {
-                                            Log.d(TAG, "Success");
-                                        }
-                                    });
-
-                                    Intent intent
-                                            = new Intent(SignUppage.this,
-                                            LoginPage.class);
-                                    startActivity(intent);
-                                } else {
-
-                                    // Registration failed
-                                    Toast.makeText(
-                                            getApplicationContext(),
-                                            "Registration failed!!"
-                                                    + " Please try again later",
-                                            Toast.LENGTH_LONG)
-                                            .show();
+                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+                                    Log.d(TAG, "Success");
                                 }
-                            }
-                        });
-            };
+                            });
+
+                            Intent intent = new Intent(SignUppage.this, LoginPage.class);
+                            startActivity(intent);
+                            finish();
+                        } else {
+
+                            // Registration failed
+                            Toast.makeText(getApplicationContext(), "Registration failed!!" + " Please try again later", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            }
+
+            ;
         });
     }
 }
